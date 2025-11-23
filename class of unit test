@@ -1,0 +1,48 @@
+package org.junit;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Account
+{
+    String name;
+    String phoneNumber;
+    String groupType;
+
+    Account(String name, String phoneNumber, String groupType) 
+    {
+        this.name = name;
+        this.phoneNumber = phoneNumber;
+        this.groupType = groupType;
+    }
+    
+    public String getName() {
+        return name;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public String getGroupType() {
+        return groupType;
+    }
+    
+    
+    public void setName(String name)
+    {
+    	this.name = name;
+    }
+    
+    public void setPhoneNumber(String phoneNumber)
+    {
+    	this.phoneNumber = phoneNumber;
+    }
+    
+    public void setGroupType(String groupType)
+    {
+    	this.groupType = groupType;
+    }
+    
+}
+
