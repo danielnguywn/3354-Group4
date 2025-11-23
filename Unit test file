@@ -1,0 +1,18 @@
+// Unit test code
+package org.junit;
+
+import static org.junit.Assert.assertEquals;
+import org.junit.jupiter.api.Test;
+
+public class AccountTest {
+
+    @Test
+    void testAccountCreation() {
+        Account account = new Account("Anna", "1112223333", "friend");
+        
+        assertEquals("Anna", account.getName());
+        assertEquals("1112223333", account.getPhoneNumber());
+        assertEquals("friend", account.getGroupType());
+    }
+
+}
